@@ -1,5 +1,6 @@
 package scb.academy.jinglebell.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -60,7 +61,10 @@ class SongListFragment : Fragment(), OnSongClickListener {
 
     override fun onSongClick(song: Song) {
         this.context!!.let {
-            SongInfoActivity.startActivity(it,song)
+            var intent = Intent(context,SongInfoActivity::class.java)
+            intent.putExtra("song",song)
+            startActivity(intent)
+            //SongInfoActivity.startActivity(it,song)
         }
     }
 }
