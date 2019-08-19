@@ -18,4 +18,6 @@
     <string name="welcome_label">welcome</string>
     <string name="enter_nickname_label">Please enter your name (nickname)</string>
     <string name="nickname_hint">John Sick (John)</string>
+
+    <string name="KEY_NAME">John Sick (John)</string>
 </resources>
