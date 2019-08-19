@@ -1,5 +1,6 @@
 package scb.academy.jinglebell.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -35,6 +36,9 @@ class SongAdapter(private val listener: OnSongClickListener)
     }
 
     fun submitList(list: List<Song>) {
+
+        Log.d("list", "list : ${list}")
+
         _songs = list
         notifyDataSetChanged()
     }
