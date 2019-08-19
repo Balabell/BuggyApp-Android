@@ -46,7 +46,7 @@ class ProfileFragment : Fragment() {
         val _view = inflater.inflate(scb.academy.jinglebell.R.layout.fragment_profile, container, false)
 
 
-        _view.nextButton.setOnClickListener {
+        _view.submitButton.setOnClickListener {
 
             //KEY_NAME = usernameEditText.text.toString()
             Log.d("ssss", "ddddd")
@@ -54,7 +54,7 @@ class ProfileFragment : Fragment() {
 
             val intent = Intent (getActivity(), WelcomeProfileActivity::class.java)
 
-            intent.putExtra(KEY_NAME, usernameEditText.text.toString())
+            intent.putExtra("KEY_NAME", usernameEditText.text.toString())
 
             startActivity(intent)
         }
